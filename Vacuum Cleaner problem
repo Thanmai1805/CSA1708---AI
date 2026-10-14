@@ -1,0 +1,29 @@
+
+# Vacuum Cleaner Problem
+
+def vacuum_cleaner():
+    rooms = {
+        'A': 'Dirty',
+        'B': 'Dirty'
+    }
+
+    current_room = 'A'
+
+    while 'Dirty' in rooms.values():
+        print("Current Room:", current_room)
+
+        if rooms[current_room] == 'Dirty':
+            print("Room is Dirty. Cleaning...")
+            rooms[current_room] = 'Clean'
+        else:
+            print("Room is already Clean.")
+
+        if current_room == 'A':
+            current_room = 'B'
+        else:
+            current_room = 'A'
+
+    print("\nAll rooms are Clean!")
+    print("Final State:", rooms)
+
+vacuum_cleaner()
