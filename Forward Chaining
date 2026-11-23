@@ -1,0 +1,7 @@
+
+facts={"rain","clouds"}
+rules=[({"rain","clouds"},"wet_ground"),({"wet_ground"},"slippery")]
+for condition,result in rules:
+    if condition.issubset(facts):
+        facts.add(result)
+print("Derived Facts:",facts)
