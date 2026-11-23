@@ -1,0 +1,7 @@
+
+db={"Arun":"10-05-2002","Ravi":"15-08-2001","Kiran":"20-01-2003"}
+name=input("Enter name: ")
+if name in db:
+    print("Date of Birth:",db[name])
+else:
+    print("Record not found")
