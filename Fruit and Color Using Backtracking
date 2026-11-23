@@ -1,0 +1,4 @@
+
+fruits={"apple":"red","banana":"yellow","grapes":"green","orange":"orange","mango":"yellow"}
+for fruit,color in fruits.items():
+    print(fruit,"is",color)
