@@ -1,0 +1,7 @@
+
+birds={"sparrow":True,"parrot":True,"eagle":True,"penguin":False}
+bird=input("Enter bird name: ").lower()
+if bird in birds:
+    print("Can fly" if birds[bird] else "Cannot fly")
+else:
+    print("Bird not found")
