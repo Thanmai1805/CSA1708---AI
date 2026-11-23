@@ -1,0 +1,8 @@
+
+data=[("Ravi","CS101","Python"),("Anu","CS102","AI"),("Kumar","CS103","Java")]
+s=input("Enter student name: ")
+for teacher,code,subject in data:
+    if teacher.lower()==s.lower():
+        print("Teacher:",teacher)
+        print("Subject Code:",code)
+        print("Subject:",subject)
