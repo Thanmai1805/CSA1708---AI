@@ -1,0 +1,8 @@
+
+parent={"John":["Mary","Alex"],"Mary":["Sam"]}
+name=input("Enter person: ")
+for p,children in parent.items():
+    if name in children:
+        print(name,"is child of",p)
+for child in parent.get(name,[]):
+    print(child,"is child of",name)
