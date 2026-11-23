@@ -1,0 +1,9 @@
+
+monkey="floor"
+box="window"
+banana="ceiling"
+print("Monkey is at",monkey)
+print("Monkey moves to",box)
+print("Monkey pushes box below banana")
+print("Monkey climbs the box")
+print("Monkey takes the banana")
