@@ -1,0 +1,7 @@
+
+diet={"diabetes":["Vegetables","Whole grains","Low sugar food"],"bp":["Fruits","Low salt food"],"obesity":["Salad","Fruits","Low fat food"]}
+d=input("Enter disease: ").lower()
+if d in diet:
+    print("Recommended diet:",diet[d])
+else:
+    print("Diet information not available")
