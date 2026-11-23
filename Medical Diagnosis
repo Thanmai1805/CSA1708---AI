@@ -1,0 +1,10 @@
+
+symptoms=input("Enter symptoms separated by comma: ").lower().split(",")
+if "fever" in symptoms and "cough" in symptoms:
+    print("Possible condition: Flu")
+elif "headache" in symptoms:
+    print("Possible condition: Headache")
+elif "sneezing" in symptoms:
+    print("Possible condition: Allergy")
+else:
+    print("Consult a doctor for diagnosis")
