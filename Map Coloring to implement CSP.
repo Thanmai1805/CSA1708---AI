@@ -1,0 +1,35 @@
+
+colors = ["Red", "Green", "Blue"]
+
+graph = {
+    "A": ["B", "C"],
+    "B": ["A", "C", "D"],
+    "C": ["A", "B", "D"],
+    "D": ["B", "C"]
+}
+
+result = {}
+
+def coloring(region):
+    if region == len(graph):
+        return True
+
+    r = list(graph)[region]
+
+    for color in colors:
+        if all(result.get(n) != color for n in graph[r]):
+            result[r] = color
+
+            if coloring(region + 1):
+                return True
+
+            del result[r]
+
+    return False
+
+if coloring(0):
+    print("Map Coloring:")
+    for r, c in result.items():
+        print(r, ":", c)
+else:
+    print("No solution")
